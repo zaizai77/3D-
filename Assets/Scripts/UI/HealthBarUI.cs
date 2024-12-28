@@ -32,7 +32,6 @@ public class HealthBar : MonoBehaviour
                 UIbar = Instantiate(healthUIPrefab, canvas.transform).transform;
                 healthSlider = UIbar.GetChild(0).GetComponent<Image>();
                 UIbar.gameObject.SetActive(alwaysVisible);
-                Debug.Log("生成了一个ui bar" + canvas.name);
             }
         }
     }
