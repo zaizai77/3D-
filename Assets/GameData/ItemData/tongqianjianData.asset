@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c02c342a3af94141b1a84feb81cf367, type: 3}
+  m_Name: tongqianjianData
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: "\u94DC\u94B1\u5251"
+  itemIcon: {fileID: 21300000, guid: 3359338e58428484297095b4d598a3ed, type: 3}
+  itemAmount: 0
+  description: "\u4E00\u628A\u7531\u94DC\u94B1\u5236\u4F5C\u7684\u5251\uFF0C\u5E76\u6CA1\u6709\u5200\u950B\u5A01\u529B\u5374\u5F88\u5F3A\u5927"
+  stackable: 0
+  weaponPrefab: {fileID: 0}

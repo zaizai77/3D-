@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c02c342a3af94141b1a84feb81cf367, type: 3}
+  m_Name: Chase
+  m_EditorClassIdentifier: 
+  itemType: 0
+  itemName: "\u5976\u916A"
+  itemIcon: {fileID: 21300000, guid: fe6331e213b678f4781d76826aed05f3, type: 3}
+  itemAmount: 0
+  description: "\u9999\u751C\u7684\u5976\u916A\uFF0C\u5403\u4E0B\u53EF\u4EE5\u589E\u52A0\u9971\u8179\u611F"
+  stackable: 1
+  weaponPrefab: {fileID: 6799866616183118265, guid: 50c43364c7808e54090397feef04528b, type: 3}

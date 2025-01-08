@@ -16,14 +16,22 @@ MonoBehaviour:
   - ID: 01
     image: {fileID: -3989417037294542392, guid: dc095ce8d2086f541bd26c7e3a71ef12, type: 3}
     text: "\u4F60\u597Da"
+    quest: {fileID: 0}
     dialogOptions:
-    - text: A
+    - text: "\u6211\u633A\u5FD9\u7684"
       targetID: 
       takeQuest: 0
-    - text: B
+    - text: "\u6709\u4E8B\u5417\uFF1F"
       targetID: 02
       takeQuest: 0
   - ID: 02
     image: {fileID: -6367837219966448765, guid: 375a132719b8f114aadcfda6bf62f8b1, type: 3}
-    text: "\u54C8\u54C8\u54C8\u54C8\u54C8\u54C8"
-    dialogOptions: []
+    text: "\u6700\u8FD1\u8FB9\u5883\u7ECF\u5E38\u6709\u602A\u7269\u51FA\u6CA1\uFF0C\u6751\u6C11\u4EEC\u5F88\u5BB3\u6015\u3002\u4F60\u613F\u610F\u63A5\u6536\u8BA8\u4F10\u602A\u7269\u7684\u59D4\u6258\u5417\uFF1F"
+    quest: {fileID: 11400000, guid: f6a297045010f3a449a051a0ebbf2068, type: 2}
+    dialogOptions:
+    - text: "\u597D\u7684\uFF0C\u6CA1\u95EE\u9898\u3002"
+      targetID: 
+      takeQuest: 1
+    - text: "\u6211\u4E5F\u5F88\u5BB3\u6015~\uFF0C\u5C31\u4E0D\u4E86\u3002"
+      targetID: 
+      takeQuest: 0

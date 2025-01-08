@@ -9,6 +9,7 @@ public class OptionUI : MonoBehaviour
     public TextMeshProUGUI optionText;
     private Button thisButton;
     private DialogPiece currentPiece;
+    private bool takeQuest;
     private string nextPieceID;
 
     private void Awake()
@@ -22,10 +23,36 @@ public class OptionUI : MonoBehaviour
         currentPiece = piece;
         optionText.text = option.text;
         nextPieceID = option.targetID;
+        takeQuest = option.takeQuest;
     }
 
     public void OnOptionClicked()
     {
+        if (currentPiece.quest != null)
+        {
+            var newTask = new QuestManager.QuestTask
+            {
+                questData = Instantiate(currentPiece.quest)
+            };
+
+            if (takeQuest)
+            {
+                // 添加到任务列表
+
+                //判断是否已经有任务
+                if (QuestManager.Instance.HaveQuest(newTask.questData))
+                {
+                    // 判断是否完成给予奖励
+
+                }
+                else
+                {
+                    QuestManager.Instance.tasks.Add(newTask);
+                    QuestManager.Instance.GetTask(newTask.questData).IsStarted = true;
+                }
+            }
+        }
+
         if(nextPieceID == "")
         {
             DialogUI.Instance.dialogPanel.SetActive(false);

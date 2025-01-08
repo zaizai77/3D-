@@ -9,5 +9,8 @@ public class DialogPiece
     public Sprite image;
     [TextArea]
     public string text;
+
+    public QuestData_SO quest;
+
     public List<DialogOption> dialogOptions = new List<DialogOption>();
 }
