@@ -10,6 +10,9 @@ public class Character_Status : MonoBehaviour
     public CharacterDate_SO templateData;
     public AttackData_SO attackData;
 
+    [Header("Weapon")]
+    public Transform weaponSlot;
+
     [HideInInspector]
     public bool isCritical;
 
@@ -20,6 +23,8 @@ public class Character_Status : MonoBehaviour
             characterData = Instantiate(templateData);
         }
     }
+
+
 
     #region read from Data_SO
 
@@ -89,6 +94,22 @@ public class Character_Status : MonoBehaviour
             Debug.Log("暴击！" + coreDamage);
         }
         return (int)coreDamage;
+    }
+
+    #endregion
+
+    #region Equip Weapon
+
+    public void EquipWeapon(ItemData_SO weapon)
+    {
+        if(weapon.weaponPrefab != null)
+        {
+            //会保持物体原有的 position 和 rotation
+            Instantiate(weapon.weaponPrefab, weaponSlot);
+
+            //切换属性 将人物的攻击属性更改
+            attackData.ApplyWeaponData(weapon.weaponData);
+        }
     }
 
     #endregion
